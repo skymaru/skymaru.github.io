@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"_sass/initialize.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"initialize\";\n",
+		"@charset \"utf-8\";\n\n$content-width: 800px !default;\n$spacing-unit: 30px !default;\n\n@import\n    \"main\";",
+		"$backgroundColor: #ffffff;\n$bodyColor: #000000;\n$bodyFont: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-family: $bodyFont;\n}\n\na {\n  text-decoration: none;\n}\n\n.wrapper {\n  max-width: calc(#{$content-width} - (#{$spacing-unit}));\n  margin-right: auto;\n  margin-left: auto;\n}"
+	],
+	"names": [],
+	"mappings": "AEIA,AAAA,IAAI,CAAC,EACH,UAAU,EALM,OAAO,EAMvB,KAAK,EALK,OAAO,EAMjB,WAAW,EALF,aAAa,EAAC,kBAAkB,EAAC,UAAU,EAAC,SAAS,EAAC,KAAK,EAAC,UAAU,EAAC,mBAAmB,EAAC,gBAAgB,EAAC,iBAAiB,GAMvI;;AAED,AAAA,CAAC,CAAC,EACA,eAAe,EAAE,IAAI,GACtB;;AAED,AAAA,QAAQ,CAAC,EACP,SAAS,EAAE,oBAAkG,EAC7G,YAAY,EAAE,IAAI,EAClB,WAAW,EAAE,IAAI,GAClB"
+}
