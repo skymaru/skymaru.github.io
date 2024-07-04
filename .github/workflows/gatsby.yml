@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '18.x'
       - name: Install dependencies
         run: yarn install --prod --pure-lockfile
       - name: Build
@@ -21,6 +17,6 @@ jobs:
           NODE_ENV: production
       - uses: peaceiris/actions-gh-pages@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
