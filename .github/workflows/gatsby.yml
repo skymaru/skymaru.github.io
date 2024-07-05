@@ -17,10 +17,12 @@ jobs:
         with:
           node-version: '20'
 
-      - run: npm ci
-      - run: npm run format
-      - run: npm run test
-      - run: npm run build
+      - name: install
+        run: |
+          npm ci
+          npm run format
+          npm run test
+          npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
